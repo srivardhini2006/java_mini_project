@@ -1,18 +1,22 @@
-&nbsp;# Student Management System (Java - Console App)
+ # Student Management System (Java - Console App)
 
 
 
-A simple console-based Student Management System built using Java.  
+A simple console-based Student Management System built using Java.
 
 This project demonstrates basic Java concepts and version control using Git \& GitHub.
 
 
 
-\## ✨ Features
+&nbsp;## ✨ Features
 
 \- Add a student (ID \& Name)
 
 \- View all students
+
+\- Delete a student by ID
+
+\- Update a student's name by ID
 
 \- Menu-driven console interface
 
@@ -20,9 +24,9 @@ This project demonstrates basic Java concepts and version control using Git \& G
 
 \## 🛠️ Tech Stack
 
-\- Java  
+\- Java
 
-\- Git \& GitHub  
+\- Git \& GitHub
 
 
 
@@ -30,29 +34,29 @@ This project demonstrates basic Java concepts and version control using Git \& G
 
 1\. Compile:
 
-&nbsp;  javac Main.java Student.java
+   javac Main.java Student.java
 
 2\. Run:
 
-&nbsp;  java Main
+   java Main
 
 
 
 \## 📌 Sample Usage
 
-1\. Choose option 1 to add a student  
+1\. Choose option 1 to add a student
 
-2\. Choose option 2 to view students  
+2\. Choose option 2 to view students
 
-3\. Choose option 3 to exit  
+3\. Choose option 3 to exit
 
 
 
 \## 🚀 Future Improvements
 
-\- Delete student  
+\- Delete student
 
-\- Update student  
+\- Update student
 
-\- Store data in file  
+\- Store data in file
 
