@@ -12,7 +12,8 @@ public class Main {
             System.out.println("\n--- Student Management System ---");
             System.out.println("1. Add Student");
             System.out.println("2. View Students");
-            System.out.println("3. Exit");
+            System.out.println("3. Delete Student");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 
             choice = sc.nextInt();
@@ -25,12 +26,15 @@ public class Main {
                     viewStudents();
                     break;
                 case 3:
+                    deleteStudent();
+                    break;
+                case 4:
                     System.out.println("Exiting... Bye!");
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
-        } while (choice != 3);
+        } while (choice != 4);
     }
 
     static void addStudent() {
@@ -54,6 +58,31 @@ public class Main {
         System.out.println("\n--- Student List ---");
         for (Student s : students) {
             System.out.println("ID: " + s.id + ", Name: " + s.name);
+        }
+    }
+
+    static void deleteStudent() {
+        if (students.isEmpty()) {
+            System.out.println("No students to delete.");
+            return;
+        }
+
+        System.out.print("Enter student id to delete: ");
+        int id = sc.nextInt();
+
+        boolean found = false;
+
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).id == id) {
+                students.remove(i);
+                found = true;
+                System.out.println("Student deleted successfully!");
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Student with ID " + id + " not found.");
         }
     }
 }
