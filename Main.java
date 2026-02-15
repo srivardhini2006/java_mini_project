@@ -13,7 +13,8 @@ public class Main {
             System.out.println("1. Add Student");
             System.out.println("2. View Students");
             System.out.println("3. Delete Student");
-            System.out.println("4. Exit");
+            System.out.println("4. Update Student");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
 
             choice = sc.nextInt();
@@ -29,12 +30,15 @@ public class Main {
                     deleteStudent();
                     break;
                 case 4:
+                    updateStudent();
+                    break;
+                case 5:
                     System.out.println("Exiting... Bye!");
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
-        } while (choice != 4);
+        } while (choice != 5);
     }
 
     static void addStudent() {
@@ -77,6 +81,34 @@ public class Main {
                 students.remove(i);
                 found = true;
                 System.out.println("Student deleted successfully!");
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Student with ID " + id + " not found.");
+        }
+    }
+
+    static void updateStudent() {
+        if (students.isEmpty()) {
+            System.out.println("No students to update.");
+            return;
+        }
+
+        System.out.print("Enter student id to update: ");
+        int id = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        boolean found = false;
+
+        for (Student s : students) {
+            if (s.id == id) {
+                System.out.print("Enter new name: ");
+                String newName = sc.nextLine();
+                s.name = newName;
+                found = true;
+                System.out.println("Student updated successfully!");
                 break;
             }
         }
