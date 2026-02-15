@@ -1,16 +1,36 @@
-\# Java Mini Project
+&nbsp;# Student Management System (Java - Console App)
 
 
 
-This is my first Java project pushed to GitHub using Git.
+A simple console-based Student Management System built using Java.  
+
+This project demonstrates basic Java concepts and version control using Git \& GitHub.
 
 
 
-\## How to Run
+\## ✨ Features
+
+\- Add a student (ID \& Name)
+
+\- View all students
+
+\- Menu-driven console interface
+
+
+
+\## 🛠️ Tech Stack
+
+\- Java  
+
+\- Git \& GitHub  
+
+
+
+\## ▶️ How to Run
 
 1\. Compile:
 
-&nbsp;  javac Main.java
+&nbsp;  javac Main.java Student.java
 
 2\. Run:
 
@@ -18,15 +38,21 @@ This is my first Java project pushed to GitHub using Git.
 
 
 
-\## Tech Used
+\## 📌 Sample Usage
 
-\- Java
+1\. Choose option 1 to add a student  
 
-\- Git \& GitHub
+2\. Choose option 2 to view students  
+
+3\. Choose option 3 to exit  
 
 
 
-\## Output
+\## 🚀 Future Improvements
 
-Prints a welcome message to the console.
+\- Delete student  
+
+\- Update student  
+
+\- Store data in file  
 
